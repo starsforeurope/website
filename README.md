@@ -17,3 +17,12 @@ Dopo Generate da Simpply Static
 Scrivere su terminale : 
 ```shell
 ~/Desktop/website/update.sh
+
+
+Trova l’ultimo export di Simply Static.
+
+Copia tutti i file dentro website/docs/.
+
+Fa git add, git commit e git push.
+
+Netlify pubblica subito il nuovo sito. 🚀
