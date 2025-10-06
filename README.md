@@ -12,3 +12,8 @@ git add .
 git commit -m 'cosa hai cambiato?'
 git push
 ```
+Sincronizzare da WP local a Netifly
+Dopo Generate da Simpply Static
+Scrivere su terminale : 
+```shell
+~/Desktop/website/update.sh
