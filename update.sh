@@ -1,7 +1,7 @@
-#!/bin/bash
-
+#!/bin/b               
 # Percorso export Simply Static (prende sempre l’ultima cartella generata)
-EXPORT_DIR=$(ls -td ~/Local\ Sites/starsforeurope/app/public/wp-content/uploads/simply-static/temp-files/simply-static-* | head -1)
+EXPORT_DIR=$(ls -td ~/Local\ Sites/starsforeurope/app/public/wp-content/uploads/simply-static/temp-files/simply-static-*/ | head -1)
+
 
 # Percorso repo GitHub
 WEBSITE_DIR=~/Desktop/website
