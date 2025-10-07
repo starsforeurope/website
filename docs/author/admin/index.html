@@ -187,6 +187,30 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
   }
 }
 
+
+/* ===== Inversione ordine colonne in mobile ===== */
+@media (max-width: 768px) {
+  .wp-block-columns.reverse-mobile {
+    flex-direction: column-reverse !important;
+  }
+}
+
+/* ===== Inversione + ridimensionamento bracciale in mobile ===== */
+@media (max-width: 768px) {
+  .wp-block-columns.reverse-mobile {
+    flex-direction: column-reverse !important;
+  }
+
+  /* Ridimensiona immagini o video dentro la colonna del bracciale */
+  .wp-block-columns.reverse-mobile .wp-block-column:nth-child(2) img,
+  .wp-block-columns.reverse-mobile .wp-block-column:nth-child(2) video {
+    width: 70% !important;
+    max-width: 300px !important;
+    margin: 0 auto 1rem auto !important;
+    display: block !important;
+  }
+}
+
 :root :where(.wp-block-button .wp-block-button__link){background-color: #2f67b3;border-radius: 24px;border-top-width: 0px;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-width: 0px;border-bottom-style: none;border-left-width: 0px;border-left-style: none;font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.051), 0.9rem);font-style: normal;font-weight: 600;letter-spacing: 0.05em;line-height: 3.5;padding-top: 0px;padding-right: 23px;padding-bottom: 0px;padding-left: 23px;text-transform: uppercase;}
 :root :where(.wp-block-navigation){font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: var(--wp--preset--font-size--small);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
