@@ -98,67 +98,43 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
   .header-s4e .wp-block-buttons {
     flex-shrink: 0;
     width: auto !important;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   .header-s4e {
-    padding-inline: .5rem;
-    gap: .5rem;
+    padding-inline: 0.5rem;
+    gap: 0.5rem;
   }
   .header-s4e .wp-block-button__link {
-    padding: .5rem .8rem;
+    padding: 0.5rem 0.8rem;
     font-size: 14px;
   }
 }
 
-/* HEADER PAGINE INTERNE */
+/* ===== HEADER PAGINE INTERNE ===== */
 .header-interno {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
+  width: 100% !important;
 }
 
-/* Logo */
 .header-interno .wp-block-site-logo img {
   max-height: 120px;
   height: auto;
   width: auto;
 }
 
-/* Nav + pulsante */
 .header-interno .header-nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-left: auto; /* spinge a destra */
-}
-
-/* Forza layout pagine interne */
-.header-interno {
-  display: flex !important;
-  justify-content: space-between !important; /* logo a sinistra, nav+pulsante a destra */
-  align-items: center !important;
-  width: 100% !important;
-}
-
-/* Logo: resta a sinistra */
-.header-interno .header-logo {
-  margin-right: auto !important;
-}
-
-/* Gruppo nav+pulsante: resta a destra */
-.header-interno .header-nav {
-  margin-left: auto !important;
   display: flex !important;
   align-items: center !important;
   gap: 1rem !important;
+  margin-left: auto !important;
   justify-content: flex-end !important;
   flex: 0 0 auto !important;
 }
 
-/* Override classi WP che centrano il menu */
 .header-interno nav.wp-block-navigation,
 .header-interno .wp-block-navigation__container {
   justify-content: flex-end !important;
@@ -167,69 +143,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 /* ===== COVER PAGINE INTERNE &ndash; MOBILE ===== */
 @media (max-width: 768px) {
   .header-cover {
-    min-height: 40vh !important;   /* almeno 40% altezza schermo */
-    max-height: 50vh !important;   /* non pi&ugrave; della met&agrave; schermo */
-    background-size: cover !important;
-    background-position: center center !important;
-  }
-
-  /* Testo dentro la cover: pi&ugrave; piccolo e pi&ugrave; compatto */
-  .header-cover .wp-block-heading,
-  .header-cover .mobile-smaller {
-    font-size: 1rem !important;
-    line-height: 1.3 !important;
-  }
-}
-
-
-/* ===== Inversione ordine colonne in mobile ===== */
-@media (max-width: 768px) {
-  .wp-block-columns.reverse-mobile {
-    flex-direction: column-reverse !important;
-  }
-}
-
-/* ===== Inversione + ridimensionamento bracciale in mobile ===== */
-@media (max-width: 768px) {
-  .wp-block-columns.reverse-mobile {
-    flex-direction: column-reverse !important;
-  }
-
-  /* Ridimensiona immagini o video dentro la colonna del bracciale */
-  .wp-block-columns.reverse-mobile .wp-block-column:nth-child(2) img,
-  .wp-block-columns.reverse-mobile .wp-block-column:nth-child(2) video {
-    width: 70% !important;
-    max-width: 300px !important;
-    margin: 0 auto 1rem auto !important;
-    display: block !important;
-  }
-}
-
-
-/* FIX Chi siamo - mobile */
-@media (max-width: 768px) {
-  .cover-chi-siamo {
     height: auto !important;
     min-height: auto !important;
-  }
-
-  .cover-chi-siamo .wp-block-cover__inner-container {
-    padding: 2rem 1rem !important;
-    text-align: center !important;
-    width: 100% !important;
-    max-width: none !important;
-    display: block !important;
-  }
-
-  .cover-chi-siamo h1,
-  .cover-chi-siamo h2,
-  .cover-chi-siamo p {
-    font-size: clamp(1rem, 4vw, 1.2rem) !important;
-    line-height: 1.4 !important;
-    margin: 0 auto !important;
-    white-space: normal !important;
-  }
-}
+    max-height: none !important;
+    background-size: cover !important;
+    backg
 
 :root :where(.wp-block-button .wp-block-button__link){background-color: #2f67b3;border-radius: 24px;border-top-width: 0px;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-width: 0px;border-bottom-style: none;border-left-width: 0px;border-left-style: none;font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.051), 0.9rem);font-style: normal;font-weight: 600;letter-spacing: 0.05em;line-height: 3.5;padding-top: 0px;padding-right: 23px;padding-bottom: 0px;padding-left: 23px;text-transform: uppercase;}
 :root :where(.wp-block-navigation){font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: var(--wp--preset--font-size--small);}
