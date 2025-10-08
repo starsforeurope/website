@@ -119,7 +119,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
   width: 100% !important;
 }
 .header-interno .wp-block-site-logo img {
-  max-height: 95px; /* ridotto ulteriormente */
+  max-height: 95px; /* ridotto per migliorare equilibrio con menu */
   height: auto;
   width: auto;
 }
@@ -164,23 +164,23 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 @media (max-width: 768px) {
   .header-cover {
     position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: 50vh !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 55vh !important;             /* aumenta un po' lo spazio complessivo */
     background-size: cover !important;
     background-position: center center !important;
-    overflow: hidden !important;
+    overflow: visible !important;            /* lascia uscire il contenuto se serve */
   }
 
   .header-cover .wp-block-cover__inner-container {
     position: relative !important;
     z-index: 2 !important;
     width: 100% !important;
-    max-width: 96% !important;      /* colonna pi&ugrave; larga */
+    max-width: 100% !important;              /* testo a piena larghezza */
     text-align: center !important;
-    padding: 3rem 1rem 4rem 1rem !important; /* pi&ugrave; spazio sotto */
+    padding: 3rem 1rem 5rem 1rem !important; /* pi&ugrave; spazio sotto per evitare tagli */
     margin: 0 auto !important;
+    box-sizing: border-box !important;
   }
 
   .header-cover h1,
@@ -189,9 +189,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
   .header-cover .wp-block-heading {
     color: #fff !important;
     text-align: center !important;
-    font-size: clamp(1rem, 3.4vw, 1.2rem) !important;
+    font-size: clamp(1rem, 3.5vw, 1.2rem) !important;
     line-height: 1.45 !important;
-    max-width: 95% !important;      /* pi&ugrave; ampio */
+    max-width: 95% !important;               /* colonna ampia */
     margin: 0 auto !important;
     white-space: normal !important;
     word-break: normal !important;
@@ -201,7 +201,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(47,103,179,0.35);
+    background: rgba(47,103,179,0.35);       /* overlay blu trasparente */
     z-index: 1;
   }
 }
