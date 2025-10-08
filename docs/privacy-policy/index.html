@@ -215,27 +215,28 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 }
 
 
-/* Correzione visualizzazione mobile - sezione Chi Siamo */
+/* FIX Chi siamo - mobile */
 @media (max-width: 768px) {
   .cover-chi-siamo {
-    min-height: auto !important;
     height: auto !important;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    min-height: auto !important;
   }
 
   .cover-chi-siamo .wp-block-cover__inner-container {
-    padding: 1.5rem !important;
+    padding: 2rem 1rem !important;
     text-align: center !important;
+    width: 100% !important;
+    max-width: none !important;
+    display: block !important;
   }
 
   .cover-chi-siamo h1,
   .cover-chi-siamo h2,
   .cover-chi-siamo p {
-    font-size: clamp(1rem, 4vw, 1.3rem) !important;
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
     line-height: 1.4 !important;
     margin: 0 auto !important;
-    max-width: 48rem; /* opzionale: evita righe troppo lunghe */
+    white-space: normal !important;
   }
 }
 
