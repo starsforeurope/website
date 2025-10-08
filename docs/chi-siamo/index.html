@@ -93,7 +93,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
   display: block;
   height: auto;
   width: auto;
-  max-height: 130px; /* ridotto leggermente */
+  max-height: 130px;
 }
 .header-s4e .wp-block-navigation,
 .header-s4e .wp-block-buttons {
@@ -104,7 +104,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 @media (max-width: 782px) {
   .header-s4e .wp-block-site-logo img,
   .header-s4e .custom-logo {
-    max-height: clamp(40px, 7vw, 60px) !important;
+    max-height: clamp(40px, 7vw, 55px) !important;
     width: auto !important;
   }
   .header-s4e .wp-block-navigation,
@@ -135,7 +135,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
   width: 100% !important;
 }
 .header-interno .wp-block-site-logo img {
-  max-height: 110px;
+  max-height: 95px; /* ridotto ulteriormente */
   height: auto;
   width: auto;
 }
@@ -193,9 +193,9 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
     position: relative !important;
     z-index: 2 !important;
     width: 100% !important;
-    max-width: 90% !important;      /* colonna pi&ugrave; larga */
+    max-width: 96% !important;      /* colonna pi&ugrave; larga */
     text-align: center !important;
-    padding: 3rem 1rem 3.5rem 1rem !important; /* pi&ugrave; spazio sopra e sotto */
+    padding: 3rem 1rem 4rem 1rem !important; /* pi&ugrave; spazio sotto */
     margin: 0 auto !important;
   }
 
@@ -205,9 +205,9 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
   .header-cover .wp-block-heading {
     color: #fff !important;
     text-align: center !important;
-    font-size: clamp(1rem, 3.5vw, 1.2rem) !important;
-    line-height: 1.4 !important;
-    max-width: 95% !important;
+    font-size: clamp(1rem, 3.4vw, 1.2rem) !important;
+    line-height: 1.45 !important;
+    max-width: 95% !important;      /* pi&ugrave; ampio */
     margin: 0 auto !important;
     white-space: normal !important;
     word-break: normal !important;
