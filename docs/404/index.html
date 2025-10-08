@@ -89,6 +89,25 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
   }
 }
 
+/* ===== Rifinitura cover Chi Siamo - centratura e larghezza testo ===== */
+@media (max-width: 768px) {
+  .header-cover .wp-block-cover__inner-container {
+    padding-top: 3rem !important;   /* pi&ugrave; spazio sopra */
+    padding-bottom: 3rem !important; /* pi&ugrave; spazio sotto */
+    max-width: 90% !important;      /* pi&ugrave; largo del testo */
+    margin: 0 auto !important;      /* centrato orizzontalmente */
+  }
+
+  .header-cover h1,
+  .header-cover h2,
+  .header-cover p {
+    text-align: center !important;
+    max-width: 90% !important;      /* riga pi&ugrave; larga */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 :root :where(.wp-block-button .wp-block-button__link){background-color: #2f67b3;border-radius: 24px;border-top-width: 0px;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-width: 0px;border-bottom-style: none;border-left-width: 0px;border-left-style: none;font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.051), 0.9rem);font-style: normal;font-weight: 600;letter-spacing: 0.05em;line-height: 3.5;padding-top: 0px;padding-right: 23px;padding-bottom: 0px;padding-left: 23px;text-transform: uppercase;}
 :root :where(.wp-block-navigation){font-family: var(--wp--preset--font-family--plus-jakarta-sans);font-size: var(--wp--preset--font-size--small);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
