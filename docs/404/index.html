@@ -164,22 +164,25 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 @media (max-width: 768px) {
   .header-cover {
     position: relative !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 55vh !important;             /* aumenta un po' lo spazio complessivo */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     background-size: cover !important;
     background-position: center center !important;
-    overflow: visible !important;            /* lascia uscire il contenuto se serve */
+    height: auto !important;
+    min-height: 55vh !important;  /* pi&ugrave; alta per dare spazio al testo */
+    overflow: visible !important;
   }
 
   .header-cover .wp-block-cover__inner-container {
     position: relative !important;
     z-index: 2 !important;
     width: 100% !important;
-    max-width: 100% !important;              /* testo a piena larghezza */
-    text-align: center !important;
-    padding: 3rem 1rem 5rem 1rem !important; /* pi&ugrave; spazio sotto per evitare tagli */
+    max-width: 95% !important;    /* colonna pi&ugrave; ampia */
+    padding: 2.5rem 1rem 2.5rem 1rem !important;
     margin: 0 auto !important;
+    text-align: center !important;
     box-sizing: border-box !important;
   }
 
@@ -189,9 +192,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
   .header-cover .wp-block-heading {
     color: #fff !important;
     text-align: center !important;
-    font-size: clamp(1rem, 3.5vw, 1.2rem) !important;
+    font-size: clamp(1rem, 3.6vw, 1.2rem) !important;
     line-height: 1.45 !important;
-    max-width: 95% !important;               /* colonna ampia */
+    max-width: 95% !important;
     margin: 0 auto !important;
     white-space: normal !important;
     word-break: normal !important;
@@ -201,7 +204,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(47,103,179,0.35);       /* overlay blu trasparente */
+    background: rgba(47,103,179,0.35); /* overlay blu Stars for Europe */
     z-index: 1;
   }
 }
